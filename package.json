@@ -1,0 +1,15 @@
+{
+  "name": "primer_carrito_compras",
+  "version": "1.0.0",
+  "description": "Este ejercicio simula un carrito de compras básico con tres productos. Permite agregar artículos, calcular totales y vaciar el carrito.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
