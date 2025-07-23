@@ -7,8 +7,62 @@
     <title>Primer_Carrito_De_Compras</title>
 </head>
 <body>
-    
+    <h1>"El Jardín de los Significados"</h1>
 
+    <div class="introduccion">
+        <h2>🌷 Bienvenid@ a nuestro jardín virtual 🏵️</h2>
+        <p> Aquí cada flor cuenta una historia. Descubre el significado de cada una y encuentra el <strong>regalo perfecto</strong>
+            para expresar tus emociones. Además, te enseñamos cómo cuidarlas para que tu mensaje dure más tiempo. </p>
+    </div>
+
+    <!-- Section permite aagrupar el contenido de los producto -->
+    <section class="productos">
+        <!-- Articule trata a cada producto de forma individual -->
+        <article class="productos">
+            <img src="No_Me_Olvides.jpeg" alt="No Me Olvides">
+            <h3>No Me Olvides</h3>
+            <p><strong>Significado:</strong> Amor verdadero, recuerdo.</p>
+            
+            <div class="producto-info">
+                <span class="precio">$15.000 COP</span>
+                <button onclick="agregarAlCarrito('NoMeOlvides')" class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+        </article>
+
+        <article class="productos">
+            <img src="Red _Amaryllis.jpeg" alt="Amaryllis">
+            <h3>Amaryllis</h3>
+            <p><strong>Significado:</strong> Espléndida belleza, orgullo, determinación.</p>
+
+            <div class="producto-info">
+                <span class="precio">$35.000 COP</span>
+                <button onclick="agregarAlCarrito('Amaryllis')" class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+        </article>
+
+        <article class="productos">
+            <img src="Tulipan.jpeg" alt="Tulipán">
+            <h3>Tulipán</h3>
+            <p><strong>Significado:</strong> Declaración de amor, perdón, fama.</p>
+
+            <div class="producto-info">
+                <span class="precio">$45.000 COP</span>
+                <button onclick="agregarAlCarrito('Tulipan')" class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+        </article>
+
+    </section>
+
+    <section id="resumen">
+        <h2>Resumen del carrito</h2>
+        <p><strong>Total de productos:</strong> <span id="totalUnidades">0</span></p>
+        <p><strong>Total a pagar:</strong> $<span id="totalFinal">0</span></p>
+        <p id="envioMensaje"></p>
+        <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar carrito</button>
+    </section>
 
 
     <script src="script.js"></script>
