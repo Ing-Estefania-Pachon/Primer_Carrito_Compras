@@ -53,9 +53,6 @@ function vaciarCarrito() {
     
     for (let producto in cantidadProductos) {
         cantidadProductos[producto] = 0;
-        // Actualizar en pantalla cantidad y subtotal
-        document.getElementById("cantidad-" + producto).innerText = "0";
-        document.getElementById("precio-" + producto).innerText = "0";
     }
 
     totalPrecio = 0;
